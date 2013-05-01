@@ -1,6 +1,7 @@
 name = CSC Service Alerts
 core = 7.x
 package = CSC
+php = 5.2.4
 dependencies[] = date
 dependencies[] = features
 dependencies[] = file

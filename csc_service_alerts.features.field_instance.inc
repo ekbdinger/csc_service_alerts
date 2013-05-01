@@ -89,7 +89,7 @@ function csc_service_alerts_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'description_field' => 0,
-      'file_directory' => 'files/contactcenter/service_alerts',
+      'file_directory' => 'contactcenter/service_alerts',
       'file_extensions' => 'txt pdf doc xls png jpg jpeg',
       'max_filesize' => '4 MB',
       'user_register_form' => FALSE,

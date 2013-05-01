@@ -48,11 +48,11 @@ function csc_service_alerts_views_default_views() {
   $handler->display->display_options['fields']['field_ca_summary']['id'] = 'field_ca_summary';
   $handler->display->display_options['fields']['field_ca_summary']['table'] = 'field_data_field_ca_summary';
   $handler->display->display_options['fields']['field_ca_summary']['field'] = 'field_ca_summary';
-  /* Sort criterion: Content: Post date */
-  $handler->display->display_options['sorts']['created']['id'] = 'created';
-  $handler->display->display_options['sorts']['created']['table'] = 'node';
-  $handler->display->display_options['sorts']['created']['field'] = 'created';
-  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Sort criterion: Content: Alert Date (field_ca_date) */
+  $handler->display->display_options['sorts']['field_ca_date_value']['id'] = 'field_ca_date_value';
+  $handler->display->display_options['sorts']['field_ca_date_value']['table'] = 'field_data_field_ca_date';
+  $handler->display->display_options['sorts']['field_ca_date_value']['field'] = 'field_ca_date_value';
+  $handler->display->display_options['sorts']['field_ca_date_value']['order'] = 'DESC';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
