@@ -27,6 +27,7 @@ function csc_service_alerts_views_default_views() {
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
     3 => '3',
+    5 => '5',
   );
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -67,7 +68,6 @@ function csc_service_alerts_views_default_views() {
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = '1';
   $handler->display->display_options['filters']['status']['group'] = 1;
-  $handler->display->display_options['filters']['status']['exposed'] = TRUE;
   $handler->display->display_options['filters']['status']['expose']['operator_id'] = '';
   $handler->display->display_options['filters']['status']['expose']['label'] = 'Published';
   $handler->display->display_options['filters']['status']['expose']['operator'] = 'status_op';
@@ -145,10 +145,11 @@ function csc_service_alerts_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['exposed_block'] = TRUE;
-  $handler->display->display_options['path'] = 'csc-service-alerts';
-  $handler->display->display_options['menu']['title'] = 'CSC Service Alerts';
+  $handler->display->display_options['path'] = 'csc/service-alerts';
+  $handler->display->display_options['menu']['type'] = 'normal';
+  $handler->display->display_options['menu']['title'] = 'Service Alerts';
   $handler->display->display_options['menu']['weight'] = '0';
-  $handler->display->display_options['menu']['name'] = 'main-menu';
+  $handler->display->display_options['menu']['name'] = 'menu-csc';
   $handler->display->display_options['menu']['context'] = 0;
 
   /* Display: Page */
